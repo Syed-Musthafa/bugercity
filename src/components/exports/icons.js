@@ -64,6 +64,10 @@ export const camera = require("../assets/icons/camera.png");
 export const selected = require("../assets/icons/selected.png");
 export const unselected = require("../assets/icons/unselected.png");
 
+export const plus_icon = require("../assets/icons/plus_icon.png");
+export const minus = require("../assets/icons/minus.png");
+
+
 export default {
     
     home,
@@ -113,6 +117,9 @@ export default {
 
     selected,
     unselected,
+
+    plus_icon,
+    minus
 
     // cars1,
     // cars2,

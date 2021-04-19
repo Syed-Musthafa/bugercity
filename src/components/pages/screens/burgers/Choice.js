@@ -28,7 +28,7 @@ const choices = [
     },
 ]
 
-const OrderMethodScreen = ({ navigation, route }) => {
+const Choice = ({ navigation, route }) => {
 
     const [data, setData] = useState(choices)
 
@@ -72,7 +72,7 @@ const OrderMethodScreen = ({ navigation, route }) => {
                     <Cell data={data} renderItem={_renderItem} onPress={_onItemClick} />
                 </View>
                 <View style={{ marginLeft: 20, marginRight: 20, marginTop: 250  }}>
-                <Button text="Proceed to Add Cart" onPress={() => Alert.alert('Proceed to Add Cart')} />
+                <Button text="Proceed to Add Cart" onPress={() => {navigation.push('AddToCard')}} />
             </View>
             </View>
             
@@ -81,7 +81,7 @@ const OrderMethodScreen = ({ navigation, route }) => {
     )
 }
 
-export default OrderMethodScreen
+export default Choice
 
 const styles = StyleSheet.create({
     container: {
